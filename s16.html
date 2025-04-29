@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tcm Security - Windows Privilege Escalation for Beginners 2020-5</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card"><a href="s2.html">2. Gaining a Foothold</a></li>
+<li class="card"><a href="s3.html">3. Initial Enumeration</a></li>
+<li class="card"><a href="s4.html">4. Exploring Automated Tools</a></li>
+<li class="card"><a href="s5.html">5. Escalation Path Kernel Exploits</a></li>
+<li class="card"><a href="s6.html">6. Escalation Path Passwords and Port Forwarding</a></li>
+<li class="card"><a href="s7.html">7. Escalation Path Windows Subsystem for Linux</a></li>
+<li class="card"><a href="s8.html">8. Impersonation and Potato Attacks</a></li>
+<li class="card"><a href="s9.html">9. Escalation Path getsystem</a></li>
+<li class="card"><a href="s10.html">10. Escalation Path RunAs</a></li>
+<li class="card"><a href="s11.html">11. Additional Labs</a></li>
+<li class="card"><a href="s12.html">12. Escalation Path Registry</a></li>
+<li class="card"><a href="s13.html">13. Escalation Path Executable Files</a></li>
+<li class="card"><a href="s14.html">14. Escalation Path Startup Applications</a></li>
+<li class="card"><a href="s15.html">15. Escalation Path DLL Hijacking</a></li>
+<li class="card" id="actuel"><a href="s16.html">16. Escalation Path Service Permissions Paths</a></li>
+<li class="card"><a href="s17.html">17. Escalation Path CVEE91388</a></li>
+<li class="card"><a href="s18.html">18. Capstone Challenge</a></li>
+<li class="card"><a href="s19.html">19. Conclusion</a></li>
+<li class="card"><a href="s20.html">20. BONUS Section</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s15.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s17.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section42">
+<h2 class="video-title">43. Escalation via Binary Paths</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1AQi1Fv8H5pEjQMp5Jg1oYiSUTzIkM-1x/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 0)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 0)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes42" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section43">
+<h2 class="video-title">44. Escalation via Unquoted Service Paths</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1B4Uqtj_JzHs8z2LaZek3QU4iZ8B9onQU/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 1)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 1)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes43" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section44">
+<h2 class="video-title">45. Challenge Overview</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1B5Tu9sPVsUvkzV9V2oam5Zut2UBAL22w/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 2)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 2)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes44" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section45">
+<h2 class="video-title">46. Gaining a Foothold Box 7</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1B5acg4mhaG27aGiTdLxhk4ASPn2SMxrn/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 3)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 3)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes45" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section46">
+<h2 class="video-title">47. Escalation via Unquoted Service Paths Metasploit</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BIFnvkfVmxXUmxV_rKDGtrGHDCjd0Dxk/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 4)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 4)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes46" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section47">
+<h2 class="video-title">48. Manual Challenge Walkthrough</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1BYAplqUwAggb7C_cZ-QB7agN_0u-wPJi/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 5)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 5)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes47" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<a class="home-button" href="https://brahimsaa.github.io/all" id="homeButton">
+<i class="fa-solid fa-home"></i>
+</a>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
